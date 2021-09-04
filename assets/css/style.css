@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #f9f9f9;
+}
+
+.nested-sass h2 {
+  color: #282828;
+}
+.nested-sass p {
+  color: #535353;
+}
+
+.mixin-calling {
+  border: 2px solid red;
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+}
+
+.fs-10px {
+  font-size: 10px;
+}
+
+.fs-12px {
+  font-size: 12px;
+}
+
+.fs-14px {
+  font-size: 14px;
+}
+
+.fs-16px {
+  font-size: 16px;
+}
+
+.sass-function p:nth-child(1) {
+  font-size: 32px;
+}
+.sass-function p:nth-child(2) {
+  font-size: 25px;
+}
+
+.sass-extend .sass-extend-p, .sass-extend p:nth-child(2) {
+  font-weight: bold;
+  color: Green;
+}
+.sass-extend p:nth-child(2) {
+  border: 2px solid red;
+  padding: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

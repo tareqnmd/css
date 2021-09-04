@@ -1,0 +1,52 @@
+@import './variable';
+@import './mixins';
+@import './functions';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+body {
+	font-family: $font-family;
+	@include theme-change($theme, $light-bg, $dark-bg);
+}
+
+.nested-sass {
+	h2 {
+		color: #282828;
+	}
+	p {
+		color: #535353;
+	}
+}
+.mixin-calling {
+	@include border(2px, red);
+	@include transform(scale(0.5));
+}
+@each $font-size in $font-sizes {
+	.fs-#{$font-size} {
+		font-size: $font-size;
+	}
+}
+
+.sass-function {
+	p {
+		&:nth-child(1) {
+			font-size: sum(10px, 5px, 17px);
+		}
+		&:nth-child(2) {
+			font-size: sum(30px, -25px, 20px);
+		}
+	}
+}
+
+.sass-extend {
+	.sass-extend-p {
+		font-weight: bold;
+		color: Green;
+	}
+	p {
+		&:nth-child(2) {
+			@extend .sass-extend-p;
+			@include border(2px, red);
+			padding: 20px;
+		}
+	}
+}
