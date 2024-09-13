@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+h2 {
+  margin: 5px;
+}
+
+.item {
+  background-color: #62ca70;
+  padding: 15px;
+  margin: 5px;
+}
+
+.one {
+  height: 60px;
+}
+
+.two {
+  height: 50px;
+}
+
+.three {
+  height: 40px;
+}
+
+.four {
+  height: 70px;
+}
+
+.five {
+  height: 30px;
+}
+
+.six {
+  height: 80px;
+}
+
+.flex {
+  margin: auto;
+  border: 1px solid #4ea1ee;
+  width: 600px;
+}
+
+.flex-item-short {
+  flex: 1 1 100px;
+}
+
+.flex-item-details, .flex-box .item {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100px;
+}
+
+.flex-flow-details, .flex-box {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex-flow-short {
+  flex-flow: row wrap;
+}
+
+.flex-justify-content, .flex-box {
+  justify-content: space-between;
+}
+
+.flex-align-content, .flex-box {
+  align-content: space-between;
+}
+
+.flex-align-items, .flex-box {
+  align-items: center;
+}
+
+.flex-box {
+  display: flex;
+}
+
+/*# sourceMappingURL=style.css.map */
