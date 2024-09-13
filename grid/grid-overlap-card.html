@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Grid Example</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			body {
+				font-size: 16px;
+			}
+			.grid-wrapper {
+				width: 100%;
+				padding: 10px;
+			}
+			.grid-items {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 1rem;
+			}
+			.grid-item {
+				display: grid;
+				grid-template-rows: 1fr auto;
+				border-radius: 0.5rem;
+				overflow: hidden;
+			}
+			.grid-item img {
+				width: 100%;
+				height: 400px;
+				object-fit: cover;
+				object-position: bottom;
+				grid-row: 1/-1;
+				grid-column: 1/2;
+			}
+			.grid-item figcaption {
+				padding: 1rem;
+				background: #00121955;
+				color: white;
+				grid-column: 1/2;
+				grid-row: 2/3;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="grid-wrapper">
+			<div class="grid-items">
+				<figure class="grid-item">
+					<img
+						src="/assets/images/product.png"
+						alt="Product"
+					/>
+					<figcaption>
+						<h2>Figure 1</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
+							expedita?
+						</p>
+					</figcaption>
+				</figure>
+				<figure class="grid-item">
+					<img
+						src="/assets/images/product.png"
+						alt="Product"
+					/>
+					<figcaption>
+						<h2>Figure 2</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
+							expedita?
+						</p>
+					</figcaption>
+				</figure>
+				<figure class="grid-item">
+					<img
+						src="/assets/images/product.png"
+						alt="Product"
+					/>
+					<figcaption>
+						<h2>Figure 3</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
+							expedita?
+						</p>
+					</figcaption>
+				</figure>
+				<figure class="grid-item">
+					<img
+						src="/assets/images/product.png"
+						alt="Product"
+					/>
+					<figcaption>
+						<h2>Figure 4</h2>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Id,
+							expedita?
+						</p>
+					</figcaption>
+				</figure>
+			</div>
+		</div>
+	</body>
+</html>
